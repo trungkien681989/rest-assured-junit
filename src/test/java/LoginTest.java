@@ -23,11 +23,11 @@ public class LoginTest {
     String validUsername = "QaAdminUser";
     String invalidPassword = "invalidPassword";
 
-    String loginPayload = String.format("{\"username\": \"%s\", \"password\": \"%s\"}", validUsername, invalidPassword);
+    String loginFailPayload = String.format("{\"username\": \"%s\", \"password\": \"%s\"}", validUsername, invalidPassword);
 
     Response response = given()
             .header("Content-Type", "application/json")
-            .body(loginPayload)
+            .body(loginFailPayload)
             .when()
             .post("/myapp/login")
             .then()
@@ -48,11 +48,11 @@ public class LoginTest {
     String validUsername = "QaAdminUser";
     String validPassword = "myPassword";
 
-    String loginPayload = String.format("{\"username\": \"%s\", \"password\": \"%s\"}", validUsername, validPassword);
+    String loginSuccessPayload = String.format("{\"username\": \"%s\", \"password\": \"%s\"}", validUsername, validPassword);
 
     Response response = given()
             .header("Content-Type", "application/json")
-            .body(loginPayload)
+            .body(loginSuccessPayload)
             .when()
             .post("/myapp/login")
             .then()
