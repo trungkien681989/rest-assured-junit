@@ -24,14 +24,6 @@ To install this project, follow these steps:
 
 2. Import the project into your preferred IDE as a Maven project.
 
-## Running the Tests
-
-To run the tests, you can use the following command in your terminal:
-
-`mvn test`
-
-This will run the test classes and output the results in the console.
-
 ## Built With
 
 - [RestAssured](https://github.com/rest-assured/rest-assured) - A Java DSL for easy testing of REST services
