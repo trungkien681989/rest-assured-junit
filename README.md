@@ -20,7 +20,7 @@ To install this project, follow these steps:
 
 1. Clone the repository to your local machine:
 
-`git clone https://github.com/omerbilgin/rest-assured.git`
+`git clone https://github.com/trungkien681989/rest-assured-junit`
 
 2. Import the project into your preferred IDE as a Maven project.
 
