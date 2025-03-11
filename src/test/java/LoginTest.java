@@ -2,7 +2,6 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import io.qameta.allure.*;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,9 +15,6 @@ public class LoginTest {
   }
 
   @Test
-  @Description("TC_004 Test invalid password (e.g., wrong password for a valid username)")
-  @Feature("Login")
-  @Owner("Kevin")
   public void loginFailTest() {
     String validUsername = "QaAdminUser";
     String invalidPassword = "invalidPassword";
@@ -41,9 +37,6 @@ public class LoginTest {
   }
 
   @Test
-  @Description("TC_005 Test valid username and password for successful login")
-  @Feature("Login")
-  @Owner("Kevin")
   public void loginSuccessTest() {
     String validUsername = "QaAdminUser";
     String validPassword = "myPassword";
