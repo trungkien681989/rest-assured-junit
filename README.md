@@ -1,6 +1,6 @@
 # RestAssured Project
 
-This is a sample RestAssured project in Java with Maven. The project includes test classes that use RestAssured to send requests to an open source API and validate the response content.
+This is a sample RestAssured project in Java with Maven. The project includes tests that use RestAssured to send requests to an open source API and validate the response content.
 
 ## Getting Started
 
